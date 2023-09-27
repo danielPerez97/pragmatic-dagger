@@ -1,4 +1,4 @@
-package com.example.typicode.ui.theme
+package dev.danperez.typicode.ui.theme
 
 import android.app.Activity
 import android.os.Build

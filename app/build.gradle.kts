@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.typicode"
+    namespace = "dev.danperez.typicode"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.typicode"
+        applicationId = "dev.danperez.typicode"
         minSdk = 28
         targetSdk = 33
         versionCode = 1
@@ -66,4 +66,10 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // OkHttp - 4.10.0 at the time of writing
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+
+    // Retrofit - 2.9.0 at the time of writing
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
 }

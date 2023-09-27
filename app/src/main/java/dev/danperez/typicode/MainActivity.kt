@@ -1,4 +1,4 @@
-package com.example.typicode
+package dev.danperez.typicode
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -15,7 +15,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
-import com.example.typicode.ui.theme.TypicodeExampleTheme
+import dev.danperez.typicode.ui.theme.TypicodeExampleTheme
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {

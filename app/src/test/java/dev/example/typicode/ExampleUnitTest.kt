@@ -1,4 +1,4 @@
-package com.example.typicode
+package dev.example.typicode
 
 import org.junit.Test
 
