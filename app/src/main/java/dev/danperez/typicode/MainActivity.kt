@@ -16,17 +16,21 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
 import dev.danperez.typicode.ui.theme.TypicodeExampleTheme
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 class MainActivity : ComponentActivity() {
 
+    @Inject lateinit var typicodeService: TypicodeService
     var text by mutableStateOf("Hello!")
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        (applicationContext as TypicodeApplication).typicodeAppComponent.inject(this)
         super.onCreate(savedInstanceState)
 
         lifecycleScope.launch {
-            // TODO
+            text = typicodeService.getPost(1).string()
         }
 
         setContent {

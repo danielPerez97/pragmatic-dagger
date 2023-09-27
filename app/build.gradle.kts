@@ -72,6 +72,10 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
+    // Dagger - Use the correct version in the banner above for "2.x"
+    implementation("com.google.dagger:dagger:2.48")
+    kapt("com.google.dagger:dagger-compiler:2.48")
+
     // OkHttp - 4.10.0 at the time of writing
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
 
